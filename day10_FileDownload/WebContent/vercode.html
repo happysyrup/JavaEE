@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>验证码页面</title>
+</head>
+<body>
+	<img alt="看不清，点击刷新" src="/day10_FileDownload/vercode" onclick="changeCode(this)">
+</body>
+<script type="text/javascript">
+	function changeCode(obj) {
+		obj.src = "/day10_FileDownload/vercode?i="+ Math.random();
+	}
+</script>
+</html>
